@@ -1,0 +1,86 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "1 form 3"
+    "1 card 3"
+    "1 2 3";
+    /*
+    */
+    color: white;
+}
+
+#formContainer{
+    grid-area: form;
+}
+
+form{
+    text-align: center;
+    margin: 10px;
+}
+
+form input{
+    border-radius: 5px;
+    min-height: 25px;
+}
+
+form input #submit{
+    color: pink;
+}
+
+#info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "1 high low 4"
+    "1 rf wind 3";
+    margin-top: 150px;
+    backdrop-filter: blur(2px);
+}
+
+#info h2{
+    grid-area: header;
+    text-align: center;
+}
+
+#info p{
+    text-align: center;
+}
+
+#info #low{
+    grid-area: low;
+}
+
+#info #rf{
+    grid-area: rf;
+}
+
+#info #wind{
+    grid-area: wind;
+}
+
+#info #high{
+    grid-area: high;
+}
+
+#card{
+    max-width: 338px;
+    min-height: 600px;
+    grid-area: card;
+    color: black;
+    background-image: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#header{
+    text-align: center;
+    margin-top: 10px;
+}
